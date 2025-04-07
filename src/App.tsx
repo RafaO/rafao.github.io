@@ -77,7 +77,13 @@ function App() {
               <h2 className="text-3xl font-bold mb-6 text-white">Featured Projects</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {projects.map((project, index) => (
-                  <div key={index} className="bg-gray-800 rounded-lg shadow-xl overflow-hidden border border-gray-700">
+                  <a 
+                    key={index} 
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block bg-gray-800 rounded-lg shadow-xl overflow-hidden border border-gray-700 transition-all duration-300 hover:border-blue-500 hover:shadow-2xl hover:-translate-y-1"
+                  >
                     <img 
                       src={project.image} 
                       alt={project.title}
@@ -94,7 +100,7 @@ function App() {
                         ))}
                       </div>
                     </div>
-                  </div>
+                  </a>
                 ))}
               </div>
             </section>
@@ -202,13 +208,15 @@ const projects = [
     title: "WebContainers",
     description: "Leading the development of WebContainer technology at Saber.tech, enabling full Node.js environments to run directly in the browser.",
     image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=1000",
-    technologies: ["WebAssembly", "TypeScript", "Node.js", "Browser APIs"]
+    technologies: ["WebAssembly", "TypeScript", "Node.js", "Browser APIs"],
+    url: "https://webcontainers.io"
   },
   {
     title: "Elastic Cloud Platform",
     description: "Led the development of key features in Elastic Cloud, improving platform reliability and user experience.",
     image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=1000",
-    technologies: ["Cloud Infrastructure", "Kubernetes", "JavaScript", "Go"]
+    technologies: ["Cloud Infrastructure", "Kubernetes", "JavaScript", "Go"],
+    url: "https://www.elastic.co/cloud"
   }
 ];
 
