@@ -47,9 +47,19 @@ function App() {
             <section className="mb-16">
               <h2 className="text-3xl font-bold mb-6 text-white">About Me</h2>
               <div className="bg-gray-800 rounded-lg shadow-xl p-6 border border-gray-700">
-                <p className="text-gray-300 leading-relaxed">
+                <p className="text-gray-300 leading-relaxed mb-4">
                   {personalInfo.about}
                 </p>
+                <p className="text-gray-300 leading-relaxed mb-4">
+                  {personalInfo.aboutSecondary}
+                </p>
+                <div className="flex flex-wrap gap-2 mt-6">
+                  {personalInfo.skills.map((skill, index) => (
+                    <span key={index} className="px-3 py-1 bg-blue-900 text-blue-200 rounded-full text-sm">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
               </div>
             </section>
 
@@ -167,8 +177,19 @@ function App() {
 
 const personalInfo = {
   name: "Rafael Ortega",
-  title: "Engineering Manager at Saber.tech",
-  about: "Engineering Manager at Saber.tech, focused on building the future of web development. Passionate about developer tools, web technologies, and creating exceptional developer experiences.",
+  title: "Engineering Manager | Saber.tech",
+  about: "Experienced software engineering manager with a strong track record of leading cross-functional teams across diverse domains—from mobile app development to backend and frontend systems. I thrive on solving complex problems, staying goal-oriented, and empowering teams to grow while maintaining high technical standards.",
+  aboutSecondary: "I've played a key role in designing core mobile architectures across industries like fintech, travel, and IoT. I've also helped shape engineering strategies for cloud migrations, microservices, and scalable system design. My focus is on enabling long-term success by aligning technology with business goals—without compromising code quality or developer growth.",
+  skills: [
+    "Kotlin",
+    "Java",
+    "Flutter",
+    "AWS",
+    "Docker",
+    "Jenkins",
+    "Cloud Architecture",
+    "Engineering Leadership"
+  ],
   social: {
     github: "https://github.com/rafao",
     linkedin: "https://linkedin.com/in/rafao",
@@ -180,36 +201,42 @@ const careers = [
   {
     role: "Engineering Manager",
     company: "Saber.tech",
-    period: "2022 - Present",
-    description: "Leading engineering teams to build and improve the Saber.tech platform, focusing on WebContainer technology and developer experience."
+    period: "March 2022 - Present",
+    description: "Leading cross 4 functional team responsible for the lotteries business area of the Lottoland site."
   },
   {
     role: "Engineering Manager",
-    company: "Elastic",
-    period: "2020 - 2022",
-    description: "Led engineering teams working on Elastic Cloud platform, managing cloud infrastructure and developer tooling."
+    company: "Ciklum",
+    period: "March 2020 - March 2022",
+    description: "Leading the engineering department of mobile apps in Ciklum to support the Lottoland apps across diferent markets and jurisdictions."
   },
   {
-    role: "Senior Software Engineer",
-    company: "Elastic",
-    period: "2018 - 2020",
-    description: "Developed and maintained key features for Elastic Cloud, focusing on cloud infrastructure and platform reliability."
+    role: "Android Technical Architect",
+    company: "Sync money",
+    period: "Jun 2018 - March 2020",
+    description: "Developed and maintained key features for Elastic Cloud, focusing on cloud infrastructure and platform reliability. Led technical initiatives and mentored junior engineers."
   },
   {
-    role: "Software Engineer",
-    company: "Elastic",
-    period: "2016 - 2018",
-    description: "Worked on Elastic Cloud platform development, implementing core features and improving platform stability."
+    role: "Senior Android Engineer",
+    company: "Trivago",
+    period: "Jun 2016 - June 2018",
+    description: "Worked on Elastic Cloud platform development, implementing core features and improving platform stability. Contributed to the development of cloud infrastructure management tools."
+  },
+  {
+    role: "Android Engineer",
+    company: "iExergy GmbH",
+    period: "Sep 2012 - Jun 2016",
+    description: "Developed and maintained enterprise applications for major clients. Specialized in Java development and worked with various web technologies."
   }
 ];
 
 const projects = [
   {
-    title: "WebContainers",
+    title: "Mixafy",
     description: "Leading the development of WebContainer technology at Saber.tech, enabling full Node.js environments to run directly in the browser.",
     image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=1000",
     technologies: ["WebAssembly", "TypeScript", "Node.js", "Browser APIs"],
-    url: "https://webcontainers.io"
+    url: "https://github.com/RafaO/mixify"
   },
   {
     title: "Elastic Cloud Platform",
