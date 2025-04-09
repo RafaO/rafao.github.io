@@ -233,9 +233,9 @@ const careers = [
 const projects = [
   {
     title: "Mixafy",
-    description: "Leading the development of WebContainer technology at Saber.tech, enabling full Node.js environments to run directly in the browser.",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=1000",
-    technologies: ["WebAssembly", "TypeScript", "Node.js", "Browser APIs"],
+    description: "Mixafy is a software project designed to enable Spotify users to blend songs from different sources such as their favourite playlists or artists.",
+    image: "images/play-anywhere.webp",
+    technologies: ["Flutter", "Spotify SDK", "Github actions"],
     url: "https://github.com/RafaO/mixify"
   },
   {
