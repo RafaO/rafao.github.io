@@ -239,11 +239,11 @@ const projects = [
     url: "https://github.com/RafaO/mixify"
   },
   {
-    title: "Elastic Cloud Platform",
-    description: "Led the development of key features in Elastic Cloud, improving platform reliability and user experience.",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=1000",
-    technologies: ["Cloud Infrastructure", "Kubernetes", "JavaScript", "Go"],
-    url: "https://www.elastic.co/cloud"
+    title: "YouGuide",
+    description: "YouGuide is an application designed to enhance your travel experiences by providing curated guides, itineraries, and recommendations. With YouGuide, users can explore destinations, discover hidden gems, and navigate their trips seamlessly.",
+    image: "images/youguide.jpg",
+    technologies: ["Flutter", "Google Maps", "Firebase", "React"],
+    url: "https://www.youguide.app"
   }
 ];
 
