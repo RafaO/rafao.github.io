@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Github, Linkedin, Mail, BookOpen, Terminal, Users } from 'lucide-react';
+import { Github, Linkedin, Mail, BookOpen, Terminal, Users, ExternalLink } from 'lucide-react';
 import { BlogPost as BlogPostComponent } from './components/BlogPost';
 import { getBlogPosts, type BlogPost } from './lib/getBlogPosts';
 
@@ -10,6 +10,14 @@ function App() {
   useEffect(() => {
     setBlogPosts(getBlogPosts());
   }, []);
+
+  const handlePostClick = (post: BlogPost) => {
+    if (post.external) {
+      window.open(post.external, '_blank', 'noopener,noreferrer');
+    } else {
+      setSelectedPost(post);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-gray-900">
@@ -123,14 +131,18 @@ function App() {
                   <div 
                     key={index} 
                     className="bg-gray-800 rounded-lg shadow-xl overflow-hidden border border-gray-700 cursor-pointer hover:border-blue-500 transition-colors"
-                    onClick={() => setSelectedPost(post)}
+                    onClick={() => handlePostClick(post)}
                   >
                     <div className="p-6">
                       <p className="text-blue-400 mb-2">{post.date}</p>
                       <h3 className="text-xl font-semibold mb-3 text-white">{post.title}</h3>
                       <p className="text-gray-300 mb-4">{post.excerpt}</p>
-                      <span className="text-blue-400 hover:text-blue-300 font-medium transition-colors">
-                        Read More →
+                      <span className="text-blue-400 hover:text-blue-300 font-medium transition-colors inline-flex items-center gap-2">
+                        {post.external ? (
+                          <>Read on external site <ExternalLink className="w-4 h-4" /></>
+                        ) : (
+                          'Read More →'
+                        )}
                       </span>
                     </div>
                   </div>
@@ -186,7 +198,6 @@ const personalInfo = {
     "Flutter",
     "AWS",
     "Docker",
-    "Jenkins",
     "Cloud Architecture",
     "Engineering Leadership"
   ],
