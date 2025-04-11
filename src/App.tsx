@@ -212,32 +212,32 @@ const careers = [
   {
     role: "Engineering Manager",
     company: "Saber.tech",
-    period: "March 2022 - Present",
-    description: "Leading cross 4 functional team responsible for the lotteries business area of the Lottoland site."
+    period: "March 2022 – Present",
+    description: "Leading four cross-functional teams responsible for the lotteries business domain within the Lottoland platform."
   },
   {
     role: "Engineering Manager",
     company: "Ciklum",
-    period: "March 2020 - March 2022",
-    description: "Leading the engineering department of mobile apps in Ciklum to support the Lottoland apps across diferent markets and jurisdictions."
+    period: "March 2020 – March 2022",
+    description: "Led the mobile engineering department at Ciklum, supporting Lottoland’s apps across multiple markets and jurisdictions."
   },
   {
     role: "Android Technical Architect",
-    company: "Sync money",
-    period: "Jun 2018 - March 2020",
-    description: "Developed and maintained key features for Elastic Cloud, focusing on cloud infrastructure and platform reliability. Led technical initiatives and mentored junior engineers."
+    company: "Sync.money",
+    period: "June 2018 – March 2020",
+    description: "Defined the technical architecture of the Android app at Sync.money, a fintech platform built with Kotlin and Clean Architecture. Led a team of four Android developers, focusing on maintainability, continuous delivery, and user experience."
   },
   {
     role: "Senior Android Engineer",
     company: "Trivago",
-    period: "Jun 2016 - June 2018",
-    description: "Worked on Elastic Cloud platform development, implementing core features and improving platform stability. Contributed to the development of cloud infrastructure management tools."
+    period: "June 2016 – June 2018",
+    description: "Worked on the Trivago Android app, used by millions for hotel search. Played a key role in the migration from Java to Kotlin and led several architectural initiatives."
   },
   {
     role: "Android Engineer",
     company: "iExergy GmbH",
-    period: "Sep 2012 - Jun 2016",
-    description: "Developed and maintained enterprise applications for major clients. Specialized in Java development and worked with various web technologies."
+    period: "September 2012 – June 2016",
+    description: "Developed the Android app for the wiButler smart home system, enabling users to control and automate connected home devices."
   }
 ];
 
