@@ -13,27 +13,27 @@ export interface BlogPost {
 }
 
 const internalBlogFiles = {
-  'future-of-dev-environments': futureOfDevEnvironments,
-  'building-better-dev-tools': buildingBetterDevTools,
-  'cloud-development': cloudDevelopment,
+  // 'future-of-dev-environments': futureOfDevEnvironments,
+  // 'building-better-dev-tools': buildingBetterDevTools,
+  // 'cloud-development': cloudDevelopment,
 };
 
 const externalBlogPosts: BlogPost[] = [
   {
     slug: 'Trivago Android Architecture',
     title: 'Trivago Android Architecture',
-    date: '2024-01-15',
+    date: '2018-02-06',
     excerpt: 'How we rebuilt our Android app using the new architecture components.',
     content: '',
     external: 'https://tech.trivago.com/post/android-new-architecture'
   },
   {
-    slug: 'mobile-architecture',
-    title: 'Modern Mobile Architecture Patterns',
-    date: '2024-02-01',
-    excerpt: 'Exploring different architectural patterns in mobile development and their impact on app maintainability.',
+    slug: 'flutter-native-integration',
+    title: 'Communication between Flutter and native modules.',
+    date: '2018-05-01',
+    excerpt: 'Exploring how to communicate Flutter with native code in mobile apps.',
     content: '',
-    external: 'https://dev.to/rafao/modern-mobile-architecture-patterns'
+    external: 'https://medium.com/proandroiddev/communication-between-flutter-and-native-modules-9b52c6a72dd2'
   }
 ];
 
