@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Github, Linkedin, Mail, BookOpen, Terminal, Users, ExternalLink } from 'lucide-react';
+import { Github, Linkedin, Mail, BookOpen, Terminal, Users, ExternalLink, BookOpenCheck } from 'lucide-react';
 import { BlogPost as BlogPostComponent } from './components/BlogPost';
 import { getBlogPosts, type BlogPost } from './lib/getBlogPosts';
 
@@ -29,6 +29,7 @@ function App() {
           <div className="flex space-x-4">
             <a href={personalInfo.social.github} className="text-blue-200 hover:text-white transition-colors"><Github className="w-6 h-6" /></a>
             <a href={personalInfo.social.linkedin} className="text-blue-200 hover:text-white transition-colors"><Linkedin className="w-6 h-6" /></a>
+            <a href={personalInfo.social.medium} className="text-blue-200 hover:text-white transition-colors"><BookOpenCheck className="w-6 h-6" /></a>
             <a href={`mailto:${personalInfo.social.email}`} className="text-blue-200 hover:text-white transition-colors"><Mail className="w-6 h-6" /></a>
           </div>
         </div>
@@ -47,6 +48,7 @@ function App() {
               title={selectedPost.title}
               date={selectedPost.date}
               content={selectedPost.content}
+              external={selectedPost.external}
             />
           </div>
         ) : (
@@ -178,6 +180,7 @@ function App() {
             <div className="flex space-x-4">
               <a href={personalInfo.social.github} className="text-gray-400 hover:text-blue-400 transition-colors"><Github className="w-5 h-5" /></a>
               <a href={personalInfo.social.linkedin} className="text-gray-400 hover:text-blue-400 transition-colors"><Linkedin className="w-5 h-5" /></a>
+              <a href={personalInfo.social.medium} className="text-gray-400 hover:text-blue-400 transition-colors"><BookOpenCheck className="w-5 h-5" /></a>
               <a href={`mailto:${personalInfo.social.email}`} className="text-gray-400 hover:text-blue-400 transition-colors"><Mail className="w-5 h-5" /></a>
             </div>
           </div>
@@ -204,6 +207,7 @@ const personalInfo = {
   social: {
     github: "https://github.com/rafao",
     linkedin: "https://linkedin.com/in/rafao",
+    medium: "https://medium.com/@rafaelmiguel.ortega",
     email: "rafao1989@hotmail.com"
   }
 };
