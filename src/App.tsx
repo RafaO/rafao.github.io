@@ -127,7 +127,7 @@ function App() {
 
             {/* Blog Posts */}
             <section className="mb-16">
-              <h2 className="text-3xl font-bold mb-6 text-white">Latest Blog Posts</h2>
+              <h2 className="text-3xl font-bold mb-6 text-white">Popular Blog Posts</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {blogPosts.map((post, index) => (
                   <div 
