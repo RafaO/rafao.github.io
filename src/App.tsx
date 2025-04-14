@@ -285,7 +285,7 @@ const skills = [
     title: "Developer Tools",
     icon: <Users className="w-8 h-8 text-blue-400 mb-4" />,
     items: [
-      "WebContainers",
+      "Continuous deployment",
       "Cloud Platforms",
       "Development Environments",
       "Build Tools",
@@ -296,11 +296,11 @@ const skills = [
     title: "Core Skills",
     icon: <BookOpen className="w-8 h-8 text-blue-400 mb-4" />,
     items: [
-      "Web Technologies",
+      "People Management",
       "Cloud Infrastructure",
-      "Team Leadership",
       "Agile Methodologies",
-      "Technical Mentorship"
+      "Cross-Functional Collaboration",
+      "Software architecture"
     ]
   }
 ];
