@@ -259,6 +259,13 @@ const projects = [
     image: "images/youguide.jpg",
     technologies: ["Flutter", "Google Maps", "Firebase", "React"],
     url: "https://www.youguide.app"
+  },
+  {
+    title: "YourPet",
+    description: "This Kotlin Multiplatform project is a work in progress designed to help users adopt pets from various shelters. While its core functionality centers on connecting people with adoptable pets, the project also serves as a showcase of clean architecture principles. Beyond its main goal, this app is a sandbox for experimenting with new tools and frameworks, allowing me to explore unfamiliar technologies while maintaining a strong architectural foundation.",
+    image: "images/yourpet.png",
+    technologies: ["KMP", "Google Cloud", "Docker", "GraphQL", "MongoDB"],
+    url: "https://github.com/RafaO/yourpet"
   }
 ];
 
