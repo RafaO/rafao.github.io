@@ -266,6 +266,13 @@ const projects = [
     image: "images/yourpet.png",
     technologies: ["KMP", "Google Cloud", "Docker", "GraphQL", "MongoDB"],
     url: "https://github.com/RafaO/yourpet"
+  },
+  {
+    title: "Spotify Radio Playlists",
+    description: "This project is a web scraper that extracts the information about the top songs from the site of a radio station using AI. It then uses the Spotify API to create and maintain a playlist with its content.",
+    image: "images/radio-playlists.png",
+    technologies: ["AWS", "Cloud flare workers", "GoogleGenerativeAI", "Typescript", "Spotify SDK"],
+    url: "https://github.com/RafaO/spotify-radio-playlists"
   }
 ];
 
