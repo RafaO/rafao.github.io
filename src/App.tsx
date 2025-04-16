@@ -95,26 +95,28 @@ function App() {
             {/* Projects Grid */}
             <section className="mb-16">
               <h2 className="text-3xl font-bold mb-6 text-white">Featured Projects</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {projects.map((project, index) => (
                   <a 
                     key={index} 
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block bg-gray-800 rounded-lg shadow-xl overflow-hidden border border-gray-700 transition-all duration-300 hover:border-blue-500 hover:shadow-2xl hover:-translate-y-1"
+                    className="group block bg-gray-800 rounded-xl shadow-xl overflow-hidden border border-gray-700 transition-all duration-300 hover:border-blue-500 hover:shadow-2xl hover:-translate-y-1"
                   >
-                    <img 
-                      src={project.image} 
-                      alt={project.title}
-                      className="w-full h-48 object-cover"
-                    />
-                    <div className="p-6">
-                      <h3 className="text-xl font-semibold mb-2 text-white">{project.title}</h3>
-                      <p className="text-gray-300 mb-4">{project.description}</p>
+                    <div className="aspect-[16/9] overflow-hidden">
+                      <img 
+                        src={project.image} 
+                        alt={project.title}
+                        className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                    <div className="p-8">
+                      <h3 className="text-2xl font-semibold mb-3 text-white">{project.title}</h3>
+                      <p className="text-gray-300 mb-6 text-lg">{project.description}</p>
                       <div className="flex flex-wrap gap-2">
                         {project.technologies.map((tech, i) => (
-                          <span key={i} className="px-3 py-1 bg-blue-900 text-blue-200 rounded-full text-sm">
+                          <span key={i} className="px-4 py-1.5 bg-blue-900/50 text-blue-200 rounded-full text-sm font-medium">
                             {tech}
                           </span>
                         ))}
